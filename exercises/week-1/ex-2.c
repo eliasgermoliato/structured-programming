@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/* Write a program that reads (via keyboard) in the following order, the number of Sony, Dell and Toshiba brand notebooks in a store. 
+/* Exercise description: 
+
+Write a program that reads (via keyboard) in the following order, the number of Sony, Dell and Toshiba brand notebooks in a store. 
 As output, the program must present the number of notebooks broken down by brand (Sony, Dell and Toshiba) and their total.
 
 For example, for the following INPUTS:
