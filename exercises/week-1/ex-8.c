@@ -38,13 +38,16 @@ int main()
 {
     float value_a = 0, value_b = 0, c_squared = 0, hypotenuse = 0;
 
+    printf("Enter the value of A: \n");
     scanf("%f", &value_a);
+
+    printf("Enter the value of B: \n");
     scanf("%f", &value_b);
 
     c_squared = pow(value_a, 2) + pow(value_b, 2);
     hypotenuse = sqrt(c_squared);
 
-    printf("A hipotenusa eh: %f", hypotenuse);
+    printf("The hypotenuse is: %f", hypotenuse);
 
     return 0;
 }
