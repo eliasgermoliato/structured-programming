@@ -27,39 +27,34 @@ Output:
 8 7 6 5 4 3 2 1 0
 END! */
 
-void print_odd_number(int max_reference_to_increment);
-void print_even_number(int max_reference_to_increment);
+void decrement_number(int number_to_decrement);
 
 int main()
 {
-   int inputNumber = 0;
-   
-   printf("Enter an integer:\n");
-   scanf("%d", &inputNumber);
+   int input_number = 0;
 
-    print_odd_number(inputNumber);
-    printf("\n");
-    print_even_number(inputNumber);
+    do{
+        printf("Enter an integer greater than or equal to 0:\n");
+        scanf("%d", &input_number);
 
-   return 0;
+        if(input_number < 0){
+            printf("Number must be >=0!\n");
+        }
+
+   } while(input_number < 0);
+
+    decrement_number(input_number);
+    printf("\nEND!");
+
+    return 0;
 }
 
-void print_odd_number(int max_reference_to_increment){
-    int odd_number = 1;
+void decrement_number(int number_to_decrement){
+    int min_reference_to_decrement = 0;
 
-    while(odd_number <= max_reference_to_increment){
-        printf("%d ", odd_number);
+    while(number_to_decrement >= min_reference_to_decrement){
+        printf("%d ", number_to_decrement);
 
-        odd_number = odd_number + 2;
-    }
-}
-
-void print_even_number(int max_reference_to_increment){
-    int even_number = 0;
-
-    while(even_number <= max_reference_to_increment){
-        printf("%d ", even_number);
-
-        even_number = even_number + 2;
+        number_to_decrement = number_to_decrement - 1;
     }
 }
